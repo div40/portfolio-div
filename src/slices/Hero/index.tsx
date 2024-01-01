@@ -82,12 +82,12 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       data-slice-variation={slice.variation}
       ref={component}
     >
-      <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
+      <div className="grid min-h-[60vh] grid-cols-1 md:grid-cols-2 items-center">
         <Shapes />
         <div className="col-start-1 md:row-start-1">
           <h1
-            className="mb-8 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter"
-            aria-label={slice.primary.name}
+            className="mb-8 -mt-10 text-[clamp(3rem,20vmin,20rem)] font-extrabold leading-none tracking-tighter"
+            aria-label={slice.primary.name || undefined}
           >
             <span className="block text-slate-300">
               {breakIntoLetters(slice.primary.name, "first")}

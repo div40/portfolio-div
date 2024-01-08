@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={clsx(font.className, "relative min-h-screen")}>
         <Header />
         {children}
+        <Analytics />
         <Footer />
         <div className="absolute inset-0 -z-50 max-h-screen background-gradient"></div>
         <div className="absolute pointer-events-none inset-0 -z-40 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light"></div>

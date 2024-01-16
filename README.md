@@ -1,7 +1,8 @@
-## Portfolio Website
+# Portfolio Website
 
-    Uses
-    + Nextjs
-    + Threejs
-    + Prismic
-    + TailwindCSS
+Uses
+
+- Nextjs
+- Threejs
+- Tailwind
+- Prismic
